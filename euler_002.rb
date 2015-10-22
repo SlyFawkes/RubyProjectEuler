@@ -11,9 +11,7 @@ def fibbonacci(max_value)
 
     end
 
-    temp = current_number
-    current_number += previous_number
-    previous_number = temp
+    current_number, previous_number = previous_number+current_number, current_number
   end
   total
 end
